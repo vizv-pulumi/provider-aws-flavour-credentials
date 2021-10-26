@@ -1,0 +1,3 @@
+name: provider-aws-flavoured-credentials
+runtime: nodejs
+description: "Provider: AWS-flavoured credentials"

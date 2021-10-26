@@ -1,0 +1,25 @@
+{
+  "name": "@vizv/provider-aws-flavoured-credentials",
+  "devDependencies": {
+    "@types/node": "^10.0.0",
+    "@types/uuid": "^7.0",
+    "typescript": "^3.7.7"
+  },
+  "dependencies": {
+    "@pulumi/pulumi": "^3.0.0",
+    "aws-credentials-generator": "^1.0.0",
+    "uuid": "^7.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "prepack": "npm run build",
+    "postpack": "rm -rf dist"
+  },
+  "types": "./dist/index.d.ts",
+  "version": "1.0.0"
+}
